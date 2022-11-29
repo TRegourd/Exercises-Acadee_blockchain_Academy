@@ -1,0 +1,7 @@
+Todo : Ajout d'un require dans updateProductOwner pour n'autoriser la modification d'un proprietaire que par l'actuel proprietaire.
+
+Reentrances : Positionner les fonctions payable (transfer) a la fin du code, et utiliser des vairables locales permettqnt de supprimer les instances (mapping par exemple).
+
+Transaction.approveOffer(uint256,uint256) (Transaction.sol#75-109) uses timestamp for comparisons : Pas de possibilité de contourner ce problême...
+
+Utilisation de modifiers onlyOwner, onlySeller, onlyBuyer
